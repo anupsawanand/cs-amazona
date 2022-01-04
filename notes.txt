@@ -1,0 +1,42 @@
+npx create-react-app frontend
+================
+
+You are running `create-react-app` 4.0.3, which is behind the latest release (5.0.0).
+
+--npx clear-npx-cache
+
+================
+
+diffrence Browser rotes /routes
+
+================
+nodemon install
+
+npm install --save-dev nodemon
+
+================
+to acess the API set Proxy
+
+================
+npm install axios
+npm install mongoose
+================
+
+const { MongoClient } = require('mongodb');
+const uri = "mongodb+srv://sa:<password>@cluster0.ru68d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+================
+
+
+mongodb+srv://sa:<password>@cluster0.ru68d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+================
+mongodb+srv://sa:sa123@cluster0.ru68d.mongodb.net/amazona.dbcollation?retryWrites=true&w=majority
+
