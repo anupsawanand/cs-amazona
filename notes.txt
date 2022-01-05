@@ -40,3 +40,11 @@ mongodb+srv://sa:<password>@cluster0.ru68d.mongodb.net/myFirstDatabase?retryWrit
 ================
 mongodb+srv://sa:sa123@cluster0.ru68d.mongodb.net/amazona.dbcollation?retryWrites=true&w=majority
 
+=====================
+
+heroku apps:create css-amazona-app
+heroku config:set MONGODB_URL="mongodb+srv://sa:sa@cluster0.ru68d.mongodb.net/csamazona?retryWrites=true&w=majority"
+ heroku config:set SKIP_PREFLIGHT_CHECK=true
+git push heroku
+
+
